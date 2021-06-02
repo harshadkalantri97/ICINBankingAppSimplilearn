@@ -1,0 +1,84 @@
+<app-navbar></app-navbar>
+
+<html>
+<head>
+
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+	
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+      
+          <div class="main">
+      
+            <h3>Perform Transactions</h3>
+           
+            
+    <form #transferform="ngForm">
+
+    <div class="form-group">
+        <label for="description">Description</label>
+        <input type="text" class="form-control" placeholder="Enter Description" required pattern="^\w+" name="description" [(ngModel)]="transfer.description">
+    </div> 
+    
+    <div class="form-group">
+        <label for="Amount">Enter Amount</label>
+        <input type="number" class="form-control" placeholder="Enter Amount" required pattern="[0-9]+" name="amount" [(ngModel)]="transfer.transactionAmount">
+    </div>
+    
+    <div class="form-group">
+        <label for="fromaccount">Enter From Account</label>
+        <input type="number" class="form-control" placeholder="Enter From Account" required pattern="[0-9]+" name="fromaccount" [(ngModel)]="transfer.sourceAccountnumber">
+    </div>
+
+    <div class="form-group">
+        <label for="destinationaccount">Enter To Account</label>
+        <input type="number" class="form-control" placeholder="Enter To Account" required pattern="[0-9]+" name="fromaccount" [(ngModel)]="transfer.destinationAccountnumber">
+    </div>
+
+    <div class="form-group">
+        <label for="IFSC">IFSC</label>
+        <input type="text" class="form-control" placeholder="Enter IFSC Code" required name="fromaccount" [(ngModel)]="transfer.IFSC">
+    </div>
+
+
+
+
+   
+    <!-- <div class="form-group">
+        <label for="Amount">Enter Amount</label>
+        <input type="number" class="form-control" placeholder="Enter Amount" required pattern="[0-9]" name="amount">
+        
+         <div *ngIf="amount.errors && (amount.invalid && amount.touched)">
+          <small class="text-danger" *ngIf="amount.errors.required">Amount is required</small>
+          <small class="text-danger" *ngIf="amount.errors.pattern">Entered amount is not valid</small>
+      </div>
+    </div> -->
+
+
+
+	
+	<!-- <div class="form-group">
+		<label for="cars">Select Account Type</label>
+		<select id="accounttype" name="accounttype">
+		  <option value="primary">Primary</option>
+		  <option value="savings">Savings</option>
+		</select>
+    </div> -->
+ 
+      <!-- <button [disabled]= "transferform.form.invalid"  (click)="Withdraw()"   type="button" class="btn btn btn-primary">
+       Withdraw
+      </button > -->
+      
+	  <button (click)="Transfer()"   type="button" class="btn btn btn-primary">
+        Deposit
+      </button >
+    </form>
+</div>     
+</div>
+</div>
+</body>
+</html>

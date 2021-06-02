@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<div class="topnav" id="myTopnav">
+  <!-- <a *ngIf="loginService.isUserLoggedIn()" routerLink="/adminportal" class="active">AdminPortal</a> -->
+  <a *ngIf="loginService.isUserLoggedIn()" routerLink="/viewusers">View User Profiles</a>
+  <a *ngIf="loginService.isUserLoggedIn()" routerLink="/serverequest">Requests</a>
+  <a *ngIf="loginService.isUserLoggedIn()" routerLink="/logout" (click)="LogOut()" class="nav-link">Logout</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" (click)="myFunction()">&#9776;</a>
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <header>
+    <nav class ="navbar navbar-expand-md navbar-dark bg-dark">    
+    <ul class="navbar-nav">
+       
+      <li><a *ngIf="loginService.isUserLoggedIn()" routerLink="/" class="nav-link">View Employees</a></li>
+      <li><a *ngIf="loginService.isUserLoggedIn()" routerLink="/addemployee" class="nav-link">Add New Employee</a></li>
+      <li><a *ngIf="!loginService.isUserLoggedIn()" routerLink="/login" class="nav-link">Login</a></li>
+      <li><a *ngIf="loginService.isUserLoggedIn()" routerLink="/logout" (click)="LogOut()" class="nav-link">LogOut</a></li>
+    
+    </ul>
+      </nav>
+</header> -->
+  

@@ -1,0 +1,38 @@
+<app-navbar></app-navbar>
+<html>
+    <head>
+        <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+          
+              <div class="main">
+          
+                <h3>Deposit Page</h3>
+        <form #depositform="ngForm">
+<div class="form-group">
+    <label for="acctype">AccountType</label>
+    <input type="text" class="form-control" placeholder="Enter AccountType" required name="Accounttype" [(ngModel)]="deposit.accType">
+    <small>Primary, Savings</small>
+</div>
+<div class="form-group">
+    <label for="accnumber">AccountNumber</label>
+    <input type="text" class="form-control" placeholder="Enter AccountNumber" required name="AccountNumber" [(ngModel)]="deposit.accNo">
+</div>
+<div class="form-group">
+    <label for="amount">Amount</label>
+    <input type="text" class="form-control" placeholder="Enter Amount" required name="Amount" [(ngModel)]="deposit.amount">
+</div>
+  <button [disabled]= "depositform.form.invalid" (click)="Deposit()" type="submit" class="btn btn btn-primary">
+    Deposit
+  </button>
+
+</form>
+</div>     
+</div>
+</div>
+</body>
+</html>

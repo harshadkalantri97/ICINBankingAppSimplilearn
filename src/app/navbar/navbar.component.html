@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<div class="topnav" id="myTopnav" >
+  <a *ngIf="loginService.isUserLoggedIn()" routerLink="/myprofile">My Profile</a>
+  <!-- <div class="dropdown">
+    <button class="dropbtn">Transfer Funds
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a *ngIf="loginService.isUserLoggedIn()" routerLink="/deposit">Deposit</a>
+      <a *ngIf="loginService.isUserLoggedIn()" routerLink="/savings">Savings Account</a>
+    </div>
+  </div> -->
+  <a *ngIf="loginService.isUserLoggedIn()" routerLink="/deposit">Deposit</a>
+  <a *ngIf="loginService.isUserLoggedIn()" routerLink="/withdrawl">Withdrawl</a>
+  <a *ngIf="loginService.isUserLoggedIn()" routerLink="/transfer">Transfer</a>
+  <a *ngIf="loginService.isUserLoggedIn()" routerLink="/history">History</a>
+    
+  <a *ngIf="loginService.isUserLoggedIn()" routerLink="/request">Checkbook Request</a>
+  <a *ngIf="loginService.isUserLoggedIn()" routerLink="/logout" (click)="LogOut()" class="nav-link">Logout</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" (click)="myFunction()">&#9776;</a>
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <header>
+    <nav class ="navbar navbar-expand-md navbar-dark bg-dark">    
+    <ul class="navbar-nav">
+       
+      <li><a *ngIf="loginService.isUserLoggedIn()" routerLink="/" class="nav-link">View Employees</a></li>
+      <li><a *ngIf="loginService.isUserLoggedIn()" routerLink="/addemployee" class="nav-link">Add New Employee</a></li>
+      <li><a *ngIf="!loginService.isUserLoggedIn()" routerLink="/login" class="nav-link">Login</a></li>
+      <li><a *ngIf="loginService.isUserLoggedIn()" routerLink="/logout" (click)="LogOut()" class="nav-link">LogOut</a></li>
+    
+    </ul>
+      </nav>
+</header> -->
+  
