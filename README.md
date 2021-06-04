@@ -6,6 +6,6 @@ I have 2 Branches - Master and main.
 For Angular - Master
 
 
-For Springboot - Main
+For Springboot, AWS Deployment utility - Main
 
 Also attaching excel sheet for sprint details that couldn't do in the project submission.
